@@ -3,6 +3,7 @@ const app = express();
 const hbs = require('hbs');
 const curYear = new Date().getFullYear();
 const fs = require('fs');
+const port = process.env.PORT || 3000;
 
 hbs.registerPartials(__dirname + '/views/partials');
 hbs.registerHelper('screamIt', (text)=>{
@@ -56,6 +57,6 @@ app.get('/bad', (req, res)=>{
 
 
 
-app.listen(3000, ()=>{
-  console.log(`Server is up on port 3000 \n Waiting on requests...`);
+app.listen(port, ()=>{
+  console.log(`Server is up on port ${port} \n Waiting on requests...`);
 });

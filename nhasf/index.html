@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='SHORTCUT ICON' href='http://newarkha.org/Portals/0/favicon.ico?ver=2018-03-19-202633-787' type='image/x-icon' />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+
+    <title>NHASF Application</title>
+</head>
+
+<body>
+    <div class="container-fluid outerContainer">
+        <div class="container-fluid innerContainer">
+            <?php include "includes/navbar.php"; ?>
+            
+            <div class="container mainContent">
+                <div class="row">
+                    <div class="col-md-2 col-sm-0"></div>
+                    <div class="col-md-8">
+                        <div class="card wizardContainer">
+                            <img class="card-img-top" src="http://www.newarkha.org/Portals/0/Images/NHASF Logo/NHASF Logo.png?ver=2018-12-13-162748-290"
+                                 alt="Card image cap">
+                            <div class="card-body" id="pg1">
+                                <h5 class="card-title">Scholarship Application Wizard</h5>
+                                <p class="card-text">
+                                    This wizard will help you apply for a scholarship with the NHASF. If you cannot
+                                    complete a section or need to gather more documents to upload, you can save your progress and come
+                                    back later.
+                                </p>
+                                <div class="col-12 wizardControls">
+                                    <button href="#" class="btn btnBack" onclick="btnSelect(-1)">Back</button>
+                                    <button href="#" class="btn btnNext" onclick="btnSelect(1)">Next</button>
+                                </div>
+                            </div>
+
+                            <div class="card-body" id="pg2">
+                                <h5 class="card-title">Create new account or login?</h5>
+                                <p class="card-text">
+                                    If you have already started an application, you must login to continue your application.<br>
+                                    If you have forgotten your password, click LOGIN and FORGOT PASSWORD.
+                                </p>
+                                <div class="col-12 wizardControls">
+                                    <button href="#" class="btn btnBack" onclick="btnSelect(-1)">Back</button>
+                                    <button href="#" class="btn btnNext" onclick="btnSelect(1)">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-0"></div>
+                </div>
+
+            </div>
+            
+        </div>
+        <footer>
+              This is where feet go.
+            </footer>
+    </div>
+    <script type="text/javascript" src="js/code.js">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

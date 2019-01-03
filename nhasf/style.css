@@ -1,0 +1,133 @@
+* {
+    margin: 0; 
+    padding: 0;
+    text-decoration: none;
+    }
+.content, .wrapper, header, footer, .topNav, .outerContainer, .innerContainer {
+    display: block;
+}
+
+/*--nhaPrimCol: #0c4bbc;
+    --nhaSecCol: #e7a817;
+    --nhaWarnCol: #f2dc96;
+    --nhaLightWarnCol: #fff5d8;
+*/
+
+body {
+    overflow-y: auto;
+}
+
+.outerContainer {
+    background-color: #eee;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.container-fluid .innerContainer {
+    background-color: white;
+    padding: 5px 0;
+    margin: 3px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.topNav {
+    float: left;
+    margin-top:10px;
+    color: white;
+}
+
+.mainContent {
+    padding: 20px 0;
+}
+
+.mainTitle {
+    color: #0c4bbc;
+    text-align: center;
+}
+
+.nhaLogo {
+    height: 150px;
+    margin: 5px;
+    float: left;
+}
+
+.navBarFix {
+    align-self: flex-end;
+    margin-bottom: 20px
+}
+
+.nhaButton {
+    background-color: #0c4bbc !important;
+    color: white !important;
+    min-width: 50px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.navBarFix ul .nav-item .nav-link {
+    color: #0c4bbc;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navBarFix ul .nav-item .nav-link:hover {
+    background-color: #0c4bbc !important;
+    color: white !important;
+    min-width: 50px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+header {
+    border-bottom: 3px solid #e7a817;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+footer {
+    min-height: 100px;
+}
+.card.wizardContainer {
+    border:5px solid #333;
+    border-radius: 15px;
+    min-height: 400px;
+    padding:10px;
+    position: relative;
+    
+}
+
+.wizardControls {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.card .btnNext {
+    min-width: 100px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+.card .btn:hover {
+      filter: brightness(150%);
+}
+
+.card .btnBack {
+    min-width: 100px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+#pg1 {
+    display: block;
+}
+
+#pg2 {
+    display: none;
+}
